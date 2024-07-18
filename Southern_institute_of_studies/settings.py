@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Southern_institute_of_studies.wsgi.application'
+WSGI_APPLICATION = 'Southern_institute_of_studies.wsgi.app'
 
 
 # Database

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v%p9c1^=2wc_anc2*w*++c1y4xob%^@lic#2&bqa)@h$0@w5=_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost']
 
 
 # Application definition
@@ -79,13 +79,17 @@ WSGI_APPLICATION = 'Southern_institute_of_studies.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'EBNTr2bYuUi7',
+        'HOST': 'ep-late-cell-a4kn58qd.us-east-1.aws.neon.tech',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
